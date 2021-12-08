@@ -149,7 +149,7 @@ export function calcDropPosition<TreeDataType extends BasicDataNode = DataNode>(
     }
   }
 
-  const abstractDragDataNode = dragNode.props.data;
+  const abstractDragDataNode = dragNode?.props.data;
   const abstractDropDataNode = abstractDropNodeEntity.node;
   let dropAllowed = true;
   if (
